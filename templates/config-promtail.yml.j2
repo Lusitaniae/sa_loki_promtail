@@ -9,4 +9,4 @@ clients:
   - url: {{ loki_server_url }}/loki/api/v1/push
 
 scrape_configs:
-  {{ scrape_configs }}
+{{ scrape_configs | indent( width=4, indentfirst=True) }}
